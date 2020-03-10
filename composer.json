@@ -1,0 +1,28 @@
+{
+  "name": "nmokkenstorm/laravel-instigator",
+  "description": "Web based command scheduling & invocation",
+  "type": "library",
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "phpstan/phpstan": "^0.12.14"
+  },
+  "authors": [
+    {
+      "name": "Niels Mokkenstorm",
+      "email": "niels@sustainabil.it"
+    }
+  ],
+  "require": {
+    "illuminate/support": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Instigator\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["Instigator\\InstigatorProvider"]
+    }
+  }
+}
