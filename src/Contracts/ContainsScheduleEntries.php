@@ -2,11 +2,12 @@
 
 namespace Instigator\Contracts;
 
+use Illuminate\Support\Enumerable;
+
 interface ContainsScheduleEntries
 {
     /**
-     * @param Callable $callback
-     * @return void
+     * @return Enumerable<ContainsScheduleConfig> 
      */
-    public function each(Callable $callback) : void;
+    public function get() : Enumerable;
 }
