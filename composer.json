@@ -14,7 +14,8 @@
     }
   ],
   "scripts": {
-    "test": "vendor/bin/phpunit"
+    "test": "vendor/bin/phpunit",
+    "code-style": "vendor/bin/phpstan analyse src --level 8"
   },
   "require": {
     "illuminate/support": "^7.1",
