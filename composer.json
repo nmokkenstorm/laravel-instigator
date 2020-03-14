@@ -5,7 +5,8 @@
   "require-dev": {
     "phpunit/phpunit": "^9.0",
     "phpstan/phpstan": "^0.12.14",
-    "mockery/mockery": "^1.3"
+    "mockery/mockery": "^1.3",
+    "orchestra/testbench": "^5.1"
   },
   "authors": [
     {
@@ -29,7 +30,7 @@
   },
   "extra": {
     "laravel": {
-      "providers": ["Instigator\\InstigatorProvider"]
+      "providers": ["Instigator\\ServiceProvider"]
     }
   }
 }

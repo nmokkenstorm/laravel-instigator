@@ -3,7 +3,8 @@
 namespace Tests;
 
 use Mockery;
-use PHPUnit\Framework\TestCase as BaseTestCase;
+use Instigator\ServiceProvider;
+use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -17,5 +18,17 @@ abstract class TestCase extends BaseTestCase
         );
         
         Mockery::close();
+
+        parent::tearDown();
+    }
+
+    /**
+     * @param $app
+     */
+    protected function getPackageProviders($app)
+    {
+        return [
+            ServiceProvider::class
+        ];
     }
 }

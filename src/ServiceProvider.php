@@ -1,10 +1,10 @@
 <?php
 
-namespace Instigator\Providers;
+namespace Instigator;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseProvider;
 
-class InstigatorProvider extends ServiceProvider
+class ServiceProvider extends BaseProvider
 {
     /**
      * Register any application services.
