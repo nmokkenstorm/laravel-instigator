@@ -8,9 +8,11 @@ use Illuminate\Console\Command;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\Collection;
 
-use Instigator\Contracts\BuildsSchedules;
-use Instigator\Contracts\ContainsScheduleConfig;
-use Instigator\Contracts\ContainsScheduleEntries;
+use Instigator\Contracts\{
+    BuildsSchedules,
+    ContainsScheduleConfig,
+    ContainsScheduleEntries
+};
 
 use Instigator\ScheduleBuilder;
 
