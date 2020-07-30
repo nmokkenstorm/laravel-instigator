@@ -1,2 +1,2 @@
-# laravel-instigator
+# laravel-web-scheduler
 Web based command scheduling &amp; invocation
